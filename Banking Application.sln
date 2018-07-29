@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Banking Application", "Banking Application\Banking Application.csproj", "{E70AC435-B7BC-44B8-9E73-5AD0BC21FF57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBConnect", "..\Desktop\bankingApplicationWithDatabase\DBConnect\DBConnect.csproj", "{EBAAD982-A5C9-4B2C-9F09-A20B82FEAB63}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E70AC435-B7BC-44B8-9E73-5AD0BC21FF57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E70AC435-B7BC-44B8-9E73-5AD0BC21FF57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E70AC435-B7BC-44B8-9E73-5AD0BC21FF57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBAAD982-A5C9-4B2C-9F09-A20B82FEAB63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBAAD982-A5C9-4B2C-9F09-A20B82FEAB63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBAAD982-A5C9-4B2C-9F09-A20B82FEAB63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBAAD982-A5C9-4B2C-9F09-A20B82FEAB63}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

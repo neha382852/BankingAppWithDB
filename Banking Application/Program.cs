@@ -18,7 +18,7 @@ namespace Banking_Application
           
           
              Console.WriteLine("Enter Number of Records to be Added");
-            int noofrecords = int.Parse(Console.ReadLine());
+            int noofrecords = Convert.ToInt32(Console.ReadLine());
             for (int index = 0; index < noofrecords; index++)
             {
                 Console.WriteLine("Enter {0} Account Id",index+1);
