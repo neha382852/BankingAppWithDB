@@ -4,3 +4,9 @@ C:\Users\nanand\Desktop\bankingApplicationWithDatabase\DBConnect\obj\Debug\DBCon
 C:\Users\nanand\Desktop\bankingApplicationWithDatabase\DBConnect\obj\Debug\DBConnect.csproj.CoreCompileInputs.cache
 C:\Users\nanand\Desktop\bankingApplicationWithDatabase\DBConnect\obj\Debug\DBConnect.dll
 C:\Users\nanand\Desktop\bankingApplicationWithDatabase\DBConnect\obj\Debug\DBConnect.pdb
+C:\Users\nanand\Desktop\BankingAppWithDB\DBConnect\bin\Debug\DBConnect.dll
+C:\Users\nanand\Desktop\BankingAppWithDB\DBConnect\bin\Debug\DBConnect.pdb
+C:\Users\nanand\Desktop\BankingAppWithDB\DBConnect\obj\Debug\DBConnect.csprojResolveAssemblyReference.cache
+C:\Users\nanand\Desktop\BankingAppWithDB\DBConnect\obj\Debug\DBConnect.csproj.CoreCompileInputs.cache
+C:\Users\nanand\Desktop\BankingAppWithDB\DBConnect\obj\Debug\DBConnect.dll
+C:\Users\nanand\Desktop\BankingAppWithDB\DBConnect\obj\Debug\DBConnect.pdb

@@ -13,53 +13,41 @@ namespace Banking_Application
         static void Main(string[] args)
         {
             
-            int accountId,amount,accountType;
-            string customerName;
-          
-          
-             Console.WriteLine("Enter Number of Records to be Added");
-            int noofrecords = Convert.ToInt32(Console.ReadLine());
-            for (int index = 0; index < noofrecords; index++)
-            {
-                Console.WriteLine("Enter {0} Account Id",index+1);
-                accountId = int.Parse(Console.ReadLine());
-                Console.WriteLine("Enter {0} Customer Name",index+1);
-                customerName = Console.ReadLine();
-                Console.WriteLine("Enter Account Type:-\n  1. Saving\n 2. Current\n 3. DMAT");
-                accountType = int.Parse(Console.ReadLine());
-                Console.WriteLine();
-                account.insert(accountId, customerName, accountType);
-                Console.WriteLine("Data Inserted");
-            }
-            int flag = 1;
+         
+            int flag = 1,amount;
             do
             {
-                Console.Write("Enter \n 1. To check Account Details\n 2. Search by Account ID \n 3. To deposit money\n 4. To withdraw money\n 5. To Calulate Interest on an account \n");
+                Console.Write("\n 1. To add account\n 2. To check Account Details\n 3. Search by Account ID \n 4. To deposit money\n 5. To withdraw money\n 6. To Calulate Interest on an account \n");
                 int choice = int.Parse(Console.ReadLine());
                 switch (choice)
                 {
                     case 1:
-                        account.disp();            //Reference parameter passed
+                        account.AddAccount();
                         break;
                     case 2:
-                        int accountNumber = int.Parse(Console.ReadLine());
-                        account.searchById(accountNumber);
+                        account.Disp();      
+
                         break;
                     case 3:
                         Console.WriteLine("Enter Id");
-                        accountNumber=int.Parse(Console.ReadLine());
-                        Console.WriteLine("Enter amount");
-                        amount = int.Parse(Console.ReadLine());
-                        account.depositAmount(accountNumber,amount);
+                        int accountNumber = int.Parse(Console.ReadLine());
+                        account.SearchById(accountNumber);
                         break;
                     case 4:
                         Console.WriteLine("Enter Id");
                         accountNumber=int.Parse(Console.ReadLine());
                         Console.WriteLine("Enter amount");
                         amount = int.Parse(Console.ReadLine());
-                        account.WithdrawlAmount(accountNumber,amount);
+                        account.DepositAmount(accountNumber,amount);
                         break;
                     case 5:
+                        Console.WriteLine("Enter Id");
+                        accountNumber=int.Parse(Console.ReadLine());
+                        Console.WriteLine("Enter amount");
+                        amount = int.Parse(Console.ReadLine());
+                        account.WithdrawlAmount(accountNumber,amount);
+                        break;
+                    case 6:
                         Console.WriteLine("Enter Id");
                         accountNumber = int.Parse(Console.ReadLine());
                         account.CalculateInterest(accountNumber);
@@ -74,7 +62,6 @@ namespace Banking_Application
                 flag = int.Parse(Console.ReadLine());
             }
             while (flag == 1);
-            Console.ReadKey();
         }
     }
 }

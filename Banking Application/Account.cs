@@ -10,21 +10,25 @@ namespace Banking_Application
     class Account
     {
         static Database db = new Database();
+        public void AddAccount()
+        {
+            db.add();
+        }
         public void insert(int id, string name, int accType)
         {
             db.insert(id, name, accType);
         }
-        public void disp()
+        public void Disp()
         {
-            db.disp();
+            db.Disp();
         }
-        public void searchById(int id)
+        public void SearchById(int id)
         {
-            db.searchById(id);
+            db.SearchById(id);
         }
-        public void depositAmount(int id, int amount)
+        public void DepositAmount(int id, int amount)
         {
-            db.depositAmount(id, amount);
+            db.DepositAmount(id, amount);
         }
         public void WithdrawlAmount(int id, int amount)
         {

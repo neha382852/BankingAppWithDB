@@ -17,3 +17,12 @@ C:\Users\nanand\bankingApplicationWithDatabase\Banking Application\obj\Debug\Ban
 C:\Users\nanand\bankingApplicationWithDatabase\Banking Application\obj\Debug\Banking Application.csproj.CoreCompileInputs.cache
 C:\Users\nanand\bankingApplicationWithDatabase\Banking Application\obj\Debug\Banking Application.exe
 C:\Users\nanand\bankingApplicationWithDatabase\Banking Application\obj\Debug\Banking Application.pdb
+C:\Users\nanand\Desktop\BankingAppWithDB\Banking Application\obj\Debug\Banking Application.csprojResolveAssemblyReference.cache
+C:\Users\nanand\Desktop\BankingAppWithDB\Banking Application\obj\Debug\Banking Application.csproj.CoreCompileInputs.cache
+C:\Users\nanand\Desktop\BankingAppWithDB\Banking Application\obj\Debug\Banking Application.exe
+C:\Users\nanand\Desktop\BankingAppWithDB\Banking Application\obj\Debug\Banking Application.pdb
+C:\Users\nanand\Desktop\BankingAppWithDB\Banking Application\bin\Debug\Banking Application.exe.config
+C:\Users\nanand\Desktop\BankingAppWithDB\Banking Application\bin\Debug\Banking Application.exe
+C:\Users\nanand\Desktop\BankingAppWithDB\Banking Application\bin\Debug\Banking Application.pdb
+C:\Users\nanand\Desktop\BankingAppWithDB\Banking Application\bin\Debug\DBConnect.dll
+C:\Users\nanand\Desktop\BankingAppWithDB\Banking Application\bin\Debug\DBConnect.pdb

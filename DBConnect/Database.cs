@@ -24,6 +24,27 @@ namespace DBConnect
                 return cn;
             }
         }
+        public void add()
+        {
+            int accountId, amount, accountType;
+            string customerName;
+
+
+            Console.WriteLine("Enter Number of Records to be Added");
+            int noofrecords = Convert.ToInt32(Console.ReadLine());
+            for (int index = 0; index < noofrecords; index++)
+            {
+                Console.WriteLine("Enter {0} Account Id", index + 1);
+                accountId = int.Parse(Console.ReadLine());
+                Console.WriteLine("Enter {0} Customer Name", index + 1);
+                customerName = Console.ReadLine();
+                Console.WriteLine("Enter Account Type:-\n 1. Saving\n 2. Current\n 3. DMAT");
+                accountType = int.Parse(Console.ReadLine());
+                Console.WriteLine();
+                insert(accountId, customerName, accountType);
+                Console.WriteLine("Data Inserted");
+            }
+        }
         public void insert(int id, string name, int accType)
         {
             SqlConnection conn = ob.connect();
@@ -31,8 +52,9 @@ namespace DBConnect
             SqlCommand cmd = new SqlCommand(sqlQuery, conn);
             cmd.ExecuteNonQuery();
             conn.Close();
+            Console.WriteLine();
         }
-        public void disp()
+        public void Disp()
         {
             SqlConnection conn = ob.connect();
             string sqlQuery = "select * from users1";
@@ -46,8 +68,9 @@ namespace DBConnect
                 Console.WriteLine("Total Amount:" + reader.GetValue(3));
             }
             conn.Close();
+            Console.WriteLine();
         }
-        public void searchById(int id)
+        public void SearchById(int id)
         {
             SqlConnection conn = ob.connect();
             string sqlQuery = "select * from users1 where id=" + id;
@@ -62,14 +85,17 @@ namespace DBConnect
             }
 
             conn.Close();
+            Console.WriteLine();
         }
-        public void depositAmount(int id, int amount)
+        public void DepositAmount(int id, int amount)
         {
             SqlConnection conn = ob.connect();
             string sqlQuery = "update users1 set balance=balance+" + amount + " where id=" + id;
             SqlCommand cmd = new SqlCommand(sqlQuery, conn);
             cmd.ExecuteNonQuery();
+            Console.WriteLine("Money has been deposited to the account");
             conn.Close();
+            Console.WriteLine();
         }
         public void WithdrawlAmount(int id, int amount)
         {
@@ -88,7 +114,10 @@ namespace DBConnect
                 string sqlQuery = "update users1 set balance=balance-" + amount + "where id=" + id;
                 SqlCommand cmd = new SqlCommand(sqlQuery, conn);
                 cmd.ExecuteNonQuery();
+                Console.WriteLine("Money has been withdrawn from the account");
                 conn.Close();
+                Console.WriteLine();
+
             }
         }
         public static string GetAccountTypeWithBalance(int id)

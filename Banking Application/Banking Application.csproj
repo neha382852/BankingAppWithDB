@@ -51,7 +51,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Desktop\bankingApplicationWithDatabase\DBConnect\DBConnect.csproj">
+    <ProjectReference Include="..\DBConnect\DBConnect.csproj">
       <Project>{ebaad982-a5c9-4b2c-9f09-a20b82feab63}</Project>
       <Name>DBConnect</Name>
     </ProjectReference>
