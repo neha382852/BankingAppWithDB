@@ -13,5 +13,6 @@ namespace DBConnect
         void DepositAmount(int id, int amount);
         void WithdrawlAmount(int id, int amount);
         void CalculateInterest(int id);
+        void Add();
     }
 }

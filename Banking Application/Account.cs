@@ -7,10 +7,18 @@ using DBConnect;
 using System.Data.SqlClient;
 namespace Banking_Application
 {
-    class Account
+   public class Account
     {
-        // static Database db = new Database();
-        static EntityFramework db = new EntityFramework();
+        IDatabase db;
+        public Account()
+        {
+            string connectionType = System.Configuration.ConfigurationManager.AppSettings["db"];
+            if (connectionType.Equals("ADO.NET"))
+                db = new Database();
+            else if (connectionType.Equals("ENTITYFRAMEWORK"))
+                db = new EntityFramework();
+        }
+        
         public void AddAccount()
         {
             db.Add();

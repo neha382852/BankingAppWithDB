@@ -11,7 +11,7 @@ namespace DBConnect
         static users1 user = new users1();
         public void Add()
         {
-            int accountId, amount, accountType;
+            int accountId, accountType;
             string customerName;
 
 
@@ -27,18 +27,24 @@ namespace DBConnect
                 accountType = int.Parse(Console.ReadLine());
                 Console.WriteLine();
                 Insert(accountId, customerName, accountType);
-                Console.WriteLine("Data Inserted Succesfully");
             }
         }
             public void Insert(int id, string name, int accType)
             {
-              
+            if (bankingDbEntities.users1.Find(id)!=null)
+            {
+                Console.WriteLine("ID already exist");
+            }
+            else
+            {
                 user.id = id;
                 user.name = name;
                 user.accountType = accType;
                 user.balance = 0;
                 bankingDbEntities.users1.Add(user);
                 bankingDbEntities.SaveChanges();
+                Console.WriteLine("Data Inserted Succesfully");
+            }
             }
         public void SearchById(int id)
         {
