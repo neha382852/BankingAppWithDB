@@ -9,14 +9,15 @@ namespace Banking_Application
 {
     class Account
     {
-        static Database db = new Database();
+        // static Database db = new Database();
+        static EntityFramework db = new EntityFramework();
         public void AddAccount()
         {
-            db.add();
+            db.Add();
         }
-        public void insert(int id, string name, int accType)
+        public void Insert(int id, string name, int accType)
         {
-            db.insert(id, name, accType);
+            db.Insert(id, name, accType);
         }
         public void Disp()
         {

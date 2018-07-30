@@ -26,3 +26,8 @@ C:\Users\nanand\Desktop\BankingAppWithDB\Banking Application\bin\Debug\Banking A
 C:\Users\nanand\Desktop\BankingAppWithDB\Banking Application\bin\Debug\Banking Application.pdb
 C:\Users\nanand\Desktop\BankingAppWithDB\Banking Application\bin\Debug\DBConnect.dll
 C:\Users\nanand\Desktop\BankingAppWithDB\Banking Application\bin\Debug\DBConnect.pdb
+C:\Users\nanand\Desktop\BankingAppWithDB\Banking Application\bin\Debug\EntityFramework.dll
+C:\Users\nanand\Desktop\BankingAppWithDB\Banking Application\bin\Debug\DBConnect.dll.config
+C:\Users\nanand\Desktop\BankingAppWithDB\Banking Application\bin\Debug\EntityFramework.xml
+C:\Users\nanand\Desktop\BankingAppWithDB\Banking Application\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nanand\Desktop\BankingAppWithDB\Banking Application\bin\Debug\EntityFramework.SqlServer.xml

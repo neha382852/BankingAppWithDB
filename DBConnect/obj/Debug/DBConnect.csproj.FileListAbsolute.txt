@@ -10,3 +10,8 @@ C:\Users\nanand\Desktop\BankingAppWithDB\DBConnect\obj\Debug\DBConnect.csprojRes
 C:\Users\nanand\Desktop\BankingAppWithDB\DBConnect\obj\Debug\DBConnect.csproj.CoreCompileInputs.cache
 C:\Users\nanand\Desktop\BankingAppWithDB\DBConnect\obj\Debug\DBConnect.dll
 C:\Users\nanand\Desktop\BankingAppWithDB\DBConnect\obj\Debug\DBConnect.pdb
+C:\Users\nanand\Desktop\BankingAppWithDB\DBConnect\bin\Debug\DBConnect.dll.config
+C:\Users\nanand\Desktop\BankingAppWithDB\DBConnect\bin\Debug\EntityFramework.dll
+C:\Users\nanand\Desktop\BankingAppWithDB\DBConnect\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\nanand\Desktop\BankingAppWithDB\DBConnect\bin\Debug\EntityFramework.xml
+C:\Users\nanand\Desktop\BankingAppWithDB\DBConnect\bin\Debug\EntityFramework.SqlServer.xml

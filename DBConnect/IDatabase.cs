@@ -5,9 +5,9 @@ using System.Text;
 
 namespace DBConnect
 {
-    interface IDatabase
+   public interface IDatabase
     {
-        void insert(int id, string name, int accType);
+        void Insert(int id, string name, int accType);
         void Disp();
         void SearchById(int id);
         void DepositAmount(int id, int amount);

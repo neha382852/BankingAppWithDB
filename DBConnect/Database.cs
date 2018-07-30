@@ -24,9 +24,9 @@ namespace DBConnect
                 return cn;
             }
         }
-        public void add()
+        public void Add()
         {
-            int accountId, amount, accountType;
+            int accountId,accountType;
             string customerName;
 
 
@@ -41,11 +41,11 @@ namespace DBConnect
                 Console.WriteLine("Enter Account Type:-\n 1. Saving\n 2. Current\n 3. DMAT");
                 accountType = int.Parse(Console.ReadLine());
                 Console.WriteLine();
-                insert(accountId, customerName, accountType);
+                Insert(accountId, customerName, accountType);
                 Console.WriteLine("Data Inserted");
             }
         }
-        public void insert(int id, string name, int accType)
+        public void Insert(int id, string name, int accType)
         {
             SqlConnection conn = ob.connect();
             string sqlQuery = "insert into users1 values(" + id + ",'" + name + "'," + accType + "," + 0 + ")";
@@ -122,7 +122,6 @@ namespace DBConnect
         }
         public static string GetAccountTypeWithBalance(int id)
         {
-            int total = 0;
             string accountAndBalance = "";
             SqlConnection conn = ob.connect();
             string sqlQuery = "select * from users1 where id=" + id;
